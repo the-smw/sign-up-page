@@ -109,7 +109,7 @@ i {
 @media (min-width: 1200px) {
   .login-card {
     width: 60%;
-    height: 60%;
+    height: auto;
   }
   h1 {
     text-align: left;
