@@ -1,0 +1,236 @@
+/*====BASE STYLES====*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+
+
+/*====LAYOUT STYLES====*/
+
+.left {
+  background-color: #6200EA;
+}
+
+
+body .right {
+  background: url('assets/gray-bailey-zindel-396398-unsplash.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+img {
+  display: block;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 1200px) {
+  img {
+    margin-left: 1rem;
+  }
+}
+
+i {
+  color: #6200EA;
+}
+
+.last {
+  margin-bottom: 2.5rem;
+}
+
+/* Containers */
+
+.left, .right {
+  width: 100%;
+  margin: 0 auto;
+  display: table;
+}
+
+@media (min-width: 1200px) {
+  .left, .right {
+    width: 50%;
+    height:90vh;
+    float: left;
+  }
+}
+
+.wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.icon-wrapper {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: .5rem;
+  margin-bottom: 1rem;
+  margin-right: .5rem;
+  margin-left: 1rem;
+}
+
+
+@media (min-width: 1200px) {
+  .left {
+    position: relative;
+  }
+  .list {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+  }
+}
+
+/* Login-card styles */
+
+.login-card {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .login-card {
+    width: 60%;
+    height: 60%;
+  }
+  h1 {
+    text-align: left;
+    padding-top: 1rem;
+  }
+}
+
+.email, .password {
+  background-color: #F4F3F5;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+
+/* Footer Styles*/
+
+footer {
+  background-color: #211138;
+  width: 100vw;
+  height: 4rem;
+  display: table;
+  padding: .6rem;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  footer {
+    height: 10vh;
+  }
+}
+
+
+/*====TYPOGRAPHY====*/
+
+/* Login-card styles */
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: .9rem;
+  color: #211138;
+  opacity: .25;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 1.25rem;
+  color: #ffffff;
+  letter-spacing: .05rem;
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    letter-spacing: .15rem;
+    padding: 1.5rem;
+    margin-top: .2rem;
+  }
+}
+
+/* Footer styles */
+
+footer {
+  color: #ffffff;
+  font-size: .6rem;
+  font-weight: 500;
+  letter-spacing: .3rem;
+  line-height: .9rem;
+  text-transform: uppercase;
+}
+
+.brand, .student {
+  text-decoration: none;
+  font-weight: 600;
+  color: #6200EA;
+}
+
+
+
+/*====COMPONENTS====*/
+
+.button {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-size: .7em;
+  font-weight: 600;
+  line-height: 1.4rem;
+  letter-spacing: .125rem;
+  padding: .8rem 1rem;
+  background-color: #6200EA;
+  border: 1px solid #6200EA;
+  color: #ffffff;
+  border-radius: 24px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.login {
+  background-color: #ffffff;
+  color: #6200EA;
+}
+
+.forgot-pass {
+  display: block;
+  font-size: .9rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #6200EA;
+  text-align: right;
+  margin-bottom: 2rem;
+  
+}
